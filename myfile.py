@@ -6,10 +6,11 @@ Created on Sun Sep  8 16:40:08 2024
 @author: mount
 """
 
-print("This a test file")
-print("This commit test")
-print("This is for main")
-print("This is the final output")
+#Importing the packages
+from pyspark.sql import SparkSession
+from pyspark.sql.types import StructType, StructField, IntegerType, StringType
+import pyspark.sql.functions as func
+
 
 def add(a, b):
     c = a * b

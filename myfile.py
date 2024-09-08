@@ -10,3 +10,9 @@ print("This a test file")
 print("This commit test")
 print("This is for main")
 print("This is the final output")
+
+def add(a, b):
+    c = a * b
+    print(c)
+
+add(500, 77777)    

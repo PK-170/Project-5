@@ -16,3 +16,8 @@ def add(a, b):
     print(c)
 
 add(500, 77777)    
+
+i = 0
+while(i < 10):
+    print("This is while loop")
+    i = i+1

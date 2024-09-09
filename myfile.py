@@ -12,6 +12,11 @@ from pyspark.sql.types import StructType, StructField, IntegerType, StringType
 import pyspark.sql.functions as func
 
 
+#Creating the SparkSession
+spark = SparkSession.builder.appName("FirstApp").getOrCreate()
+
+
+
 def add(a, b):
     c = a * b
     print(c)

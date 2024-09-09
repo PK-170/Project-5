@@ -16,6 +16,13 @@ import pyspark.sql.functions as func
 spark = SparkSession.builder.appName("FirstApp").getOrCreate()
 
 
+#Defining schema for your DataFrame
+myschema = StructType([\
+                       StructField("userID", IntegerType(), True),
+                       StructField("name", StringType(), True),
+                       StructField("age",IntegerType(), True),
+                       StructField("friends",IntegerType(), True),
+                        ])
 
 def add(a, b):
     c = a * b

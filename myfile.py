@@ -31,8 +31,9 @@ people = spark.read.format("csv")\
     .option("path","/Users/mount/SparkProject/NameOfFriends.csv")\
     .load()
     
-people.show(5, 0)
-    
+people.show(5)
+   
+print(people.count()) 
     
 def add(a, b):
     c = a * b

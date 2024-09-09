@@ -34,6 +34,10 @@ people = spark.read.format("csv")\
 people.show(5)
    
 print(people.count()) 
+
+print(spark.version)
+
+
     
 def add(a, b):
     c = a * b

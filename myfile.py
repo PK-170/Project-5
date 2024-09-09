@@ -9,7 +9,7 @@ Created on Sun Sep  8 16:40:08 2024
 #Importing the packages
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, IntegerType, StringType
-import pyspark.sql.functions as func
+#import pyspark.sql.functions as func
 
 
 #Creating the SparkSession
@@ -24,6 +24,15 @@ myschema = StructType([\
                        StructField("friends",IntegerType(), True),
                         ])
 
+    
+#Creating DataFrame on a CSV file
+people = spark.read.format("csv")\
+    .schema(myschema)\
+    .option("path","/Users/mount/SparkProject/NameOfFriends.csv")\
+    .load()
+    
+    
+    
 def add(a, b):
     c = a * b
     print(c)

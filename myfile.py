@@ -35,7 +35,7 @@ people.show(5)
    
 print(people.count()) 
 
-print(spark.version)
+
 
 
     
@@ -46,6 +46,6 @@ def add(a, b):
 add(500, 77777)    
 
 i = 0
-while(i < 10):
+while(i < 5):
     print("This is while loop")
     i = i+1

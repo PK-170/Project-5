@@ -5,5 +5,12 @@ Created on Wed Sep 11 20:50:02 2024
 
 @author: mount
 """
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import *
 
-print("new file")
+spark = SparkSession.\
+builder.\
+appName("sparksql").\
+getOrCreate()
+
+print(spark.version)

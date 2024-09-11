@@ -14,3 +14,12 @@ appName("sparksql").\
 getOrCreate()
 
 print(spark.version)
+
+
+data = spark.read.format('csv').\
+option('inferSchema','true').\
+option('header', 'false').\
+option('path','/Users/mount/SparkProject/NameOfFriends.csv').\
+load()
+
+data.show(5)

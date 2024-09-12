@@ -23,3 +23,5 @@ option('path','/Users/mount/SparkProject/NameOfFriends.csv').\
 load()
 
 data.show(5)
+
+data.printSchema()

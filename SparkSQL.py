@@ -22,6 +22,6 @@ option('header', 'false').\
 option('path','/Users/mount/SparkProject/NameOfFriends.csv').\
 load()
 
-data.show(5)
+data.show(19)
 
 data.printSchema()
